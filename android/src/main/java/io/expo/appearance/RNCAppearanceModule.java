@@ -56,7 +56,10 @@ public class RNCAppearanceModule extends ReactContextBaseJavaModule implements L
 
         // Only Android 10+ support dark mode
         if (Build.VERSION.SDK_INT > Build.VERSION_CODES.P) {
-            int currentNightMode = config.uiMode & Configuration.UI_MODE_NIGHT_MASK;
+            
+            //int currentNightMode = config.uiMode & Configuration.UI_MODE_NIGHT_MASK;
+            int currentNightMode = getReactApplicationContext().getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
+            
             switch (currentNightMode) {
                 case Configuration.UI_MODE_NIGHT_NO:
                 case Configuration.UI_MODE_NIGHT_UNDEFINED:
