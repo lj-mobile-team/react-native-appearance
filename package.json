@@ -69,6 +69,7 @@
     "@types/react-native": "^0.67.7",
     "@typescript-eslint/eslint-plugin": "^1.7.0",
     "@typescript-eslint/parser": "^1.7.0",
+    "@types/fbemitter": "^2.0.32",
     "eslint": "5.16.0",
     "eslint-config-prettier": "^4.2.0",
     "eslint-plugin-prettier": "3.0.1",
